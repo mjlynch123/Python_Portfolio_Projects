@@ -9,4 +9,6 @@ print("Ratings: {}".format(yt.rating))
 
 res = yt.streams.get_highest_resolution()
 
+print("Downloading...")
 res.download('''Path to download folder''')
+print("Downloaded")
